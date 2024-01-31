@@ -28,7 +28,6 @@ def parse(domain_list, class_info, count):
 
         tmp = line[line.find(extracted_domain.suffix):len(line)]  # tld sonraki ilk / e gore parse --> path
         pth = tmp.partition("/")
-
         domain['path'] = pth[1] + pth[2]
 
         domain['words_raw'] = words_raw_extraction(extracted_domain.domain, extracted_domain.subdomain, pth[2])
