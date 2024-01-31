@@ -26,7 +26,7 @@ def parse(domain_list, class_info, count):
         else:
             domain['protocol'] = line.split("://")[0]
 
-        tmp = line[line.find(extracted_domain.suffix):len(line)]  # tld sonraki ilk / e gore parse --> path
+        tmp = line[line.find(extracted_domain.suffix):len(line)]
         pth = tmp.partition("/")
         domain['path'] = pth[1] + pth[2]
 
