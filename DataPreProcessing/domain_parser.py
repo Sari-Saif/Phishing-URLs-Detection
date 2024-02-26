@@ -80,3 +80,11 @@ def words_raw_extraction(domain, subdomain, path):
     raw_words = list(filter(None, raw_words))
 
     return raw_words
+
+
+
+
+urls = ["http://www.conceptdraw.com/How-To-Guide/Local-Area-Network", "https://www.edrawsoft.com/Local-Area-Network.php", "http://www.webopedia.com/TERM/L/local_area_network_LAN.html"]
+d = parse_nonlabeled_samples(urls)
+print(d)
+print("DONE ")

@@ -8,7 +8,7 @@ def split_and_repeat_word(word):
         # Check if both parts are valid words
         if d.check(part1) and d.check(part2):
             # If both parts are valid words, return them repeated
-            return part1 + " " + part1 + " " + part2 + " " + part2
+            return part1, part2
     # If no valid split is found, return the original word
     return word
 

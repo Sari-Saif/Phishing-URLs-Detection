@@ -8,4 +8,3 @@ def brand_names():
     with open("../Input/allbrands.txt", "r") as f:
         return [brand_name[:-1] for brand_name in f.readlines()]
 
-
