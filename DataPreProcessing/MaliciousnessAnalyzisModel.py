@@ -39,3 +39,7 @@ def edit_distance(str1, str2):
                                    dp[i-1][j-1])      # Replace
                 
     return dp[m][n]
+
+
+
+print(edit_distance("scure", "secure"))
