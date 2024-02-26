@@ -42,4 +42,4 @@ def edit_distance(str1, str2):
 
 
 
-print(edit_distance("scure", "secure"))
+#print(edit_distance("scure", "secure"))

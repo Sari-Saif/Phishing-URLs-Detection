@@ -28,7 +28,7 @@ def is_gibberish(word):
     return False
 
 # Example usage
-print(is_gibberish("gibberish"))  # Might return False as "gibberish" is a real word
-print(is_gibberish("aabbccddeeff"))  # Might return True due to repetition
-print(is_gibberish("hello"))  # Likely returns False
-print(is_gibberish("xqwr"))  # Might return True due to unusual sequence
+#print(is_gibberish("gibberish"))  # Might return False as "gibberish" is a real word
+#print(is_gibberish("aabbccddeeff"))  # Might return True due to repetition
+#print(is_gibberish("hello"))  # Likely returns False
+#print(is_gibberish("xqwr"))  # Might return True due to unusual sequence
