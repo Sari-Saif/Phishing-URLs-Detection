@@ -39,16 +39,16 @@ def filter_composes(lst):
     return ret
 
 
-def filter_malicious(lst):
+def filter_maliciouses(lst):
     ret = []
     keywords_lst = keywords()
     brands_lst = brand_names()
     legitimate_words = keywords_lst + brands_lst
-
+    
     for word in lst:
+        if len(word) <= 3 or word in legitimate_words:
+            continue
         
-        if word in legitimate_words: continue
-
         for key_or_brand in legitimate_words:
             ed = edit_distance(word, key_or_brand)
             if ed < 2:
