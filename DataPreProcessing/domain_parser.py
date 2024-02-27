@@ -72,9 +72,9 @@ def parse_nonlabeled_samples(domain_list, count=0):
 
 def words_raw_extraction(domain, subdomain, path):
 
-    w_domain = re.split("\-|\.|\/|\?|\=|\@|\&|\%|\:|\_", domain.lower())
-    w_subdomain = re.split("\-|\.|\/|\?|\=|\@|\&|\%|\:|\_", subdomain.lower())
-    w_path = re.split("\-|\.|\/|\?|\=|\@|\&|\%|\:|\_", path.lower())
+    w_domain = re.split("\-|\.|\/|\?|\=|\@|\&|\%|\:|\_|\;", domain.lower())
+    w_subdomain = re.split("\-|\.|\/|\?|\=|\@|\&|\%|\:|\_|\;", subdomain.lower())
+    w_path = re.split("\-|\.|\/|\?|\=|\@|\&|\%|\:|\_|\;", path.lower())
 
     raw_words = w_domain + w_path + w_subdomain
     raw_words = list(filter(None, raw_words))
